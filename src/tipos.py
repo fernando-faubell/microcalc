@@ -1,0 +1,2 @@
+Entero = "Entero"
+Cadena = "Cadena"
