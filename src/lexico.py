@@ -1,2 +1,26 @@
+from componentes import *
+
 class Lexico:   
-  pass
+
+  def __init__(self,cadena):
+    self.cadena = cadena
+    self.pos = 0
+    
+  def siguiente(self):
+    while True:
+      if self.pos >= len(self.cadena):
+        return eof()
+      elif self.cadena[self.pos] in [' ', '\t']:        
+        self.pos = self.pos + 1        
+      elif self.cadena[self.pos] in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']: 
+        self.pos = self.pos + 1
+        return entero(int(self.cadena[self.pos - 1]))  
+      elif self.cadena[self.pos] == '+':
+        self.pos = self.pos + 1 
+        return suma()
+      elif self.cadena[self.pos] == '*':
+        self.pos = self.pos + 1
+        return producto()
+      elif self.cadena[self.pos] == '\n':
+        self.pos = self.pos + 1
+        return nl()
