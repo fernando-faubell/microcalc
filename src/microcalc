@@ -1,0 +1,9 @@
+#!/usr/bin/python
+
+from sintactico import *
+
+if __name__ == '__main__':
+ 
+  lexico = Lexico("3 + 2")
+  sintactico = Sintactico(lexico)
+  sintactico.analizaLinea()

@@ -1,4 +1,4 @@
-class suma:
+class Suma:
   
   def __init__(self):
     self.cat = "Suma"
@@ -6,7 +6,7 @@ class suma:
   def __str__(self):
     return self.cat
 
-class producto:
+class Producto:
 
   def __init__(self):
     self.cat = "Producto"
@@ -14,7 +14,7 @@ class producto:
   def __str__(self):
     return self.cat
 
-class entero:
+class Entero:
 
   def __init__(self,valor):
     self.cat = "Entero"
@@ -23,7 +23,7 @@ class entero:
   def __str__(self):
     return self.cat + " (valor : " + str(self.valor) + " )"
 
-class nl:
+class Nl:
 
   def __init__(self):
     self.cat = "nl"
@@ -32,7 +32,7 @@ class nl:
     return self.cat
 
 
-class eof:
+class Eof:
 
   def __init__(self):
     self.cat = "eof"
